@@ -5,28 +5,30 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { TABS } from "@/mocks/common"
 function DashboardNav() {
   return (
-      <Tabs defaultValue="products" className="w-[400px]">
-        <TabsList className="grid-cols-3">
-          {TABS.map((item) => (
-            <TabsTrigger key={item.id} value={item.value}>
-              {item.label}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-        <TabsContent value="products">
-          <div className="flex gap-2">
-            <div className="flex w-full flex-col gap-2">
-              <Label className="text-4xl">Products</Label>
-              <p className="text-bas">
-                List of products from 1 or more of your stores, even products from all other brands
+    <Tabs defaultValue="products" className="container flex h-52 flex-col justify-evenly px-4 sm:px-6 lg:px-8">
+      <TabsList className="w-fit grid-cols-3">
+        {TABS.map((item) => (
+          <TabsTrigger key={item.id} value={item.value}>
+            {item.label}
+          </TabsTrigger>
+        ))}
+      </TabsList>
+      {TABS.map((item) => (
+        <TabsContent value={item.value}>
+          <div className="flex h-20 space-x-2">
+            <div className="flex w-full flex-col space-y-2">
+              <Label className="text-3xl">{item.label}</Label>
+              <p className="text-base">
+                {item.description}
               </p>
             </div>
             <div>
-              <Button className="whitespace-nowrap">Magic Sync</Button>
+              {item.buttonLabel &&  <Button className="whitespace-nowrap">{item.buttonLabel}</Button>}
             </div>
           </div>
         </TabsContent>
-      </Tabs>
+      ))}
+    </Tabs>
   )
 }
 

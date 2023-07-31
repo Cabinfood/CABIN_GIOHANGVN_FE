@@ -6,9 +6,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    
-    // Add this line option @ to using shadcn ui
+    './@/sections/**/*.{js,ts,jsx,tsx,mdx}',
     './@/components/**/*.{js,ts,jsx,tsx,mdx}',
 	],
   theme: {
@@ -20,7 +18,7 @@ module.exports = {
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
-        "2xl": "1400px",
+        "2xl": "1440px",
       },
     },
     extend: {

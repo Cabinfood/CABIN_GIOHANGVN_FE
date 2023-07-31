@@ -1,17 +1,146 @@
 export const TABS = [
   {
-    id: 'db043232-93e1-42ea-9e03-b86e2a2cd5f2',
-    label: 'Products',
-    value: 'products'
+    id: "db043232-93e1-42ea-9e03-b86e2a2cd5f2",
+    label: "Products",
+    description: 'List of products from 1 or more of your stores, even products from all other brands',
+    value: "products",
+    buttonLabel: 'Magic Sync'
   },
   {
-    id: '5b4c79bf-9b1a-42cd-b0ef-697ce1dc66f8',
-    label: 'Design',
-    value: 'design'
+    id: "5b4c79bf-9b1a-42cd-b0ef-697ce1dc66f8",
+    label: "Design",
+    description: '',
+    value: "design",
+    buttonLabel: null
   },
   {
-    id: '25230919-8839-47dd-8e26-434e3bb63d47',
-    label: 'Settings',
-    value: 'settings'
+    id: "25230919-8839-47dd-8e26-434e3bb63d47",
+    label: "Settings",
+    description: '',
+    value: "settings",
+    buttonLabel: null
   },
-];
+]
+
+export const PRODUCTS = [
+  {
+    id: "f42f8107-1a43-450c-b6fd-0cb16e22c264",
+    title: "Massive pulmonary hemorrhage origin in the perinatal period",
+    description: "Rider of nonpowered watercraft struck by other watercraft",
+    url: "http://dummyimage.com/247x100.png/ff4444/ffffff",
+    viewCount: 1,
+    sold: 1,
+  },
+  {
+    id: "3f610f55-c607-403b-9f53-2640e050adb8",
+    title: "Underdosing of androgens and anabolic congeners, sequela",
+    description: "Other contact with squirrel, sequela",
+    url: "http://dummyimage.com/216x100.png/ff4444/ffffff",
+    viewCount: 2,
+    sold: 2,
+  },
+  {
+    id: "ee110936-0f12-4667-b56a-c2799558d6a3",
+    title: "Milt op w dest arcrft due to enmy fire/expls, milt, init",
+    description: "Poisoning by cannabis (derivatives), accidental, init",
+    url: "http://dummyimage.com/245x100.png/cc0000/ffffff",
+    viewCount: 3,
+    sold: 3,
+  },
+  {
+    id: "1c07ba8e-253e-45e9-80fb-db07795d2616",
+    title: "Athscl native cor art of transplanted heart w oth ang pctrs",
+    description: "Puncture wound with foreign body of left wrist, sequela",
+    url: "http://dummyimage.com/189x100.png/cc0000/ffffff",
+    viewCount: 4,
+    sold: 4,
+  },
+  {
+    id: "19b348f2-f1a1-41c1-a425-46c718278bdf",
+    title: "Subluxation of distal radioulnar joint of right wrist",
+    description: "Disseminated chorioretin inflammation, generalized, unsp eye",
+    url: "http://dummyimage.com/202x100.png/dddddd/000000",
+    viewCount: 5,
+    sold: 5,
+  },
+  {
+    id: "701a9172-05d2-4e56-a74c-4a3696855f2d",
+    title: "Other myositis, right shoulder",
+    description: "Unspecified sprain of right wrist, subsequent encounter",
+    url: "http://dummyimage.com/249x100.png/5fa2dd/ffffff",
+    viewCount: 6,
+    sold: 6,
+  },
+  {
+    id: "485f86d6-0f34-4485-9bf6-4a86d75fd9b8",
+    title: "Unspecified viral hepatitis C without hepatic coma",
+    description: "Other juvenile arthritis, unspecified wrist",
+    url: "http://dummyimage.com/229x100.png/5fa2dd/ffffff",
+    viewCount: 7,
+    sold: 7,
+  },
+  {
+    id: "a294f580-398b-445f-9645-05dd5ba5d444",
+    title: "Corros first deg mult left fingers (nail), not inc thumb",
+    description: "Displ oblique fx shaft of r femr, 7thR",
+    url: "http://dummyimage.com/175x100.png/5fa2dd/ffffff",
+    viewCount: 8,
+    sold: 8,
+  },
+  {
+    id: "634cd1c6-401b-4350-b7cd-42d946b4eed7",
+    title: "Osteonecrosis due to drugs, unspecified ankle",
+    description: "Unspecified injury of unspecified elbow",
+    url: "http://dummyimage.com/149x100.png/dddddd/000000",
+    viewCount: 9,
+    sold: 9,
+  },
+  {
+    id: "de68daf5-6263-4e45-83b2-0e0f7aaf7dcf",
+    title: "Abscess of bursa, unspecified hand",
+    description: "Poisoning by antithyroid drugs, intentional self-harm, init",
+    url: "http://dummyimage.com/163x100.png/ff4444/ffffff",
+    viewCount: 10,
+    sold: 10,
+  },
+  {
+    id: "ec609e40-618a-4222-b531-ba3021113b6b",
+    title: "Nondisp fx of med phalanx of r idx fngr, 7thP",
+    description: "Injury of unsp nerve at hip and thigh level, unsp leg, init",
+    url: "http://dummyimage.com/171x100.png/cc0000/ffffff",
+    viewCount: 11,
+    sold: 11,
+  },
+  {
+    id: "932660ae-fe2d-4d70-a648-0da55d9dedd4",
+    title: "Osteonecrosis in diseases classified elsewhere, left thigh",
+    description: "Oth fx lower end of left tibia, init for opn fx type I/2",
+    url: "http://dummyimage.com/121x100.png/ff4444/ffffff",
+    viewCount: 12,
+    sold: 12,
+  },
+  {
+    id: "2529ad41-9425-415d-a4de-2a1fb659eae0",
+    title: "Disorder of ligament, left hand",
+    description: "Poisoning by unsp narcotics, intentional self-harm, sequela",
+    url: "http://dummyimage.com/208x100.png/5fa2dd/ffffff",
+    viewCount: 13,
+    sold: 13,
+  },
+  {
+    id: "7ce0f7c1-ec27-4f49-9964-fc0d6f690d0f",
+    title: "Unsp fx the low end r rad, 7thF",
+    description: "Underdosing of drug/meds/biol subst, init",
+    url: "http://dummyimage.com/148x100.png/5fa2dd/ffffff",
+    viewCount: 14,
+    sold: 14,
+  },
+  {
+    id: "b8705fc0-e54c-4fe8-8536-649f7c976e2c",
+    title: "Sltr-haris Type I physeal fx left metatarsal, sequela",
+    description: "Nondisplaced bimalleolar fracture of unsp lower leg, sequela",
+    url: "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+    viewCount: 15,
+    sold: 15,
+  },
+]

@@ -10,7 +10,8 @@ type Props = {
 }
 function DashboardHeader({ children }: Props) {
   return (
-      <nav className="flex select-none items-center">
+    <div className="border-b">
+      <nav className="container mx-auto px-4 py-2 sm:px-6 lg:px-8 flex h-16 select-none items-center justify-between">
         <div className="flex">
           <ol className="flex items-center text-black">
             <li className="flex-0 hidden flex-auto sm:block">
@@ -63,6 +64,8 @@ function DashboardHeader({ children }: Props) {
           </Avatar>
         </div>
       </nav>
+      {children}
+    </div>
   )
 }
 
