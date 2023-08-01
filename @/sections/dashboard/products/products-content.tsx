@@ -1,8 +1,8 @@
 import ProductItem from "./product-item"
 import { PRODUCTS } from "@/mocks/common"
-function ListProduct() {
+function ProductContent() {
   return (
-    <div className="flex-1 space-y-2 ">
+    <div className="flex-1 space-y-2">
       {
         PRODUCTS.map((item) => <ProductItem key={item.id} item={item}/> )
       }
@@ -10,4 +10,4 @@ function ListProduct() {
   )
 }
 
-export default ListProduct
+export default ProductContent;

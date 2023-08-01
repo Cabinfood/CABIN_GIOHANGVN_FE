@@ -4,11 +4,18 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Button } from "../../components/ui/button"
 import Image from "next/image"
 import { ReactNode } from "react"
+import { useDispatch, useSelector } from "react-redux";
+import { selectAuthState } from "redux/reducers/auth-slice"
+import { setAuthState } from "redux/actions/auth-action"
 
 type Props = {
   children?: ReactNode
 }
+
 function DashboardHeader({ children }: Props) {
+  const authState = useSelector(selectAuthState);
+  const dispatch = useDispatch();
+
   return (
     <div className="border-b">
       <nav className="container mx-auto px-4 py-2 sm:px-6 lg:px-8 flex h-16 select-none items-center justify-between">
@@ -37,13 +44,19 @@ function DashboardHeader({ children }: Props) {
                           className="max-h-xs max-w-xs rounded-full"
                         />
                       </span>
-                      <p className="truncate text-sm font-medium leading-6 tracking-normal text-black">cabin@doowood</p>
+                      <p className="truncate text-sm font-medium leading-6 tracking-normal text-black">{authState ? 'cabin@doowood' : 'cabin@nologin'}</p>
                       <div>
                         <span className="truncate rounded-full bg-black px-3 py-1 capitalize text-white">free</span>
                       </div>
                       <Popover>
                         <PopoverTrigger asChild>
-                          <Button className="flex h-8 w-6 flex-col" variant="ghost" size="icon">
+                          <Button className="flex h-8 w-6 flex-col" variant="ghost" size="icon" 
+                          onClick={() =>
+                            // fake login to test setup react persist
+                            authState
+                              ? dispatch(setAuthState(false))
+                              : dispatch(setAuthState(true))
+                          }>
                             <ChevronDownIcon />
                             <ChevronUpIcon />
                           </Button>

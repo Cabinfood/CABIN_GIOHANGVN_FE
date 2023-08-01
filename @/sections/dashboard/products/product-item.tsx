@@ -19,13 +19,22 @@ function ProductItem(props: ProductItemProps) {
   return (
     <div className="flex items-center justify-between rounded-lg bg-white p-4 shadow-sm">
       <div className="flex flex-1 gap-4">
-        <Image
-          src={item.url}
-          alt="dcn"
-          width={48}
-          height={48}
-          className="w-12 h-12 rounded-sm"
-        />
+        <div className="flex">
+          <Image
+            src={item.url}
+            alt="dcn"
+            width={48}
+            height={48}
+            className="w-12 h-12 rounded-sm object-cover"
+          />
+          <Image
+            src="https://source.unsplash.com/random/200x200?sig=1"
+            alt="dcn"
+            width={48}
+            height={48}
+            className="w-5 h-5 rounded-full object-cover absolute translate-x-9 translate-y-8"
+          />
+        </div>
         <div className="flex flex-col">
           <div className="flex items-center space-x-2">
             <Label>{item.title}</Label>
