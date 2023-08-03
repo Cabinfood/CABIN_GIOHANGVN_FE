@@ -8,7 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Switch } from "@/components/ui/switch"
 function ProductSidebar() {
   return (
-    <Card className="w-80">
+    <Card className="w-80 hidden lg:block h-fit">
       <CardHeader className="border-b">
         <CardTitle className="flex items-center justify-between">
           Filter products <Cross2Icon className="h-5 w-5 rounded-sm border border-slate-200 text-slate-500" />{" "}

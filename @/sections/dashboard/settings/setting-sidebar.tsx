@@ -8,7 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Switch } from "@/components/ui/switch"
 function SettingSidebar() {
   return (
-    <Card className="w-80">
+    <Card className="w-80 h-fit hidden lg:block">
       <CardContent className=":pt-0 px-2 py-2">
         <div className="flex items-center justify-between p-3 rounded-md bg-slate-100">
           <Label htmlFor="airplane-mode">General</Label>

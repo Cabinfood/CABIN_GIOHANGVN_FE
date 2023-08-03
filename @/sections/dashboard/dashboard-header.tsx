@@ -21,13 +21,13 @@ function DashboardHeader({ children }: Props) {
       <nav className="container mx-auto px-4 py-2 sm:px-6 lg:px-8 flex h-16 select-none items-center justify-between">
         <div className="flex">
           <ol className="flex items-center text-black">
-            <li className="flex-0 hidden flex-auto sm:block">
+            <li className="flex-0 flex-auto hidden lg:block">
               <Avatar>
                 <AvatarImage src="https://source.unsplash.com/random/200x200?sig=1" alt="@shadcn" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </li>
-            <li className="flex-0 mx-2 flex hidden flex-auto sm:block">
+            <li className="flex-0 mx-2 flex flex-auto hidden lg:block">
               <SlashIcon width={24} height={24} style={{ color: "lightgray" }} />
             </li>
             <li className="flex-0 flex min-w-0 flex-auto text-sm">

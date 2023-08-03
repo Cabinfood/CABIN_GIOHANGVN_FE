@@ -25,7 +25,7 @@ function ProductItem(props: ProductItemProps) {
             alt="dcn"
             width={48}
             height={48}
-            className="w-12 h-12 rounded-sm object-cover"
+            className="w-12 h-12 min-w-48 min-h-48 max-w-fit rounded-sm object-cover"
           />
           <Image
             src="https://source.unsplash.com/random/200x200?sig=1"
