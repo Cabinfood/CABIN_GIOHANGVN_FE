@@ -8,6 +8,7 @@ import SettingContent from "./settings/setting-content"
 import { TABS } from "@/mocks/common"
 import SettingSidebar from "./settings/setting-sidebar"
 import DesignContent from "./design/design-content"
+import { AlignTopIcon, TextAlignBottomIcon, TextAlignTopIcon } from "@radix-ui/react-icons"
 
 type TabRenderers = Record<string, () => JSX.Element>;
 
@@ -46,18 +47,25 @@ function DashboardBody({ children }: Props) {
   const currentTabRenderer = tabRenderers[tabState];
 
   return (
-    <div className=" bg-slate-100">
-      <div className="container mx-auto min-h-screen px-4 sm:px-6 lg:px-8">
+    <div className="bg-slate-100">
+      <div className="container mx-auto min-h-screen px-4 sm:px-0 lg:px-8 select-none">
         {
           tabState === TABS[0].value && <div className="flex h-14 w-full items-end justify-end">
             <Select>
               <SelectTrigger className="w-[180px] bg-white">
-                <SelectValue placeholder="Sort by name" />
+                <SelectValue placeholder="Sort by name"/>
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
+                <SelectItem value="light">
+                  <span className="flex items-center">
+                    <TextAlignTopIcon className="mr-2" />Date Added
+                  </span>
+                </SelectItem>
+                <SelectItem value="dark">
+                  <span className="flex items-center">
+                    <TextAlignBottomIcon className="mr-2" />Numer Of Clicks
+                  </span>
+                </SelectItem>
               </SelectContent>
             </Select>
           </div>
